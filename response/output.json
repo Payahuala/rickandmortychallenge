@@ -1,0 +1,268 @@
+[
+  {
+    "exercise_name": "Char counter",
+    "results": [
+      {
+        "char": "c",
+        "count": 12,
+        "resource": "character"
+      },
+      {
+        "char": "e",
+        "count": 29,
+        "resource": "episode"
+      },
+      {
+        "char": "l",
+        "count": 17,
+        "resource": "location"
+      }
+    ]
+  },
+  {
+    "exercise_name": "Episode locations",
+    "results": [
+      [
+        {
+          "name": "Pilot",
+          "episode": "S01E01",
+          "location": [
+            "Bepis 9",
+            "unknown",
+            "Earth (C-137)",
+            "Gromflom Prime",
+            "Girvonesk"
+          ]
+        },
+        {
+          "name": "Anatomy Park",
+          "episode": "S01E03",
+          "location": [
+            "Earth (C-137)",
+            "Anatomy Park",
+            "unknown"
+          ]
+        },
+        {
+          "name": "Rick Potion #9",
+          "episode": "S01E06",
+          "location": [
+            "Earth (C-137)",
+            "Earth (Replacement Dimension)",
+            "Cronenberg Earth",
+            "unknown"
+          ]
+        },
+        {
+          "name": "Meeseeks and Destroy",
+          "episode": "S01E05",
+          "location": [
+            "Giant's Town",
+            "Earth (C-137)",
+            "unknown",
+            "Fantasy World",
+            "Mr. Meeseeks Box"
+          ]
+        },
+        {
+          "name": "M. Night Shaym-Aliens!",
+          "episode": "S01E04",
+          "location": [
+            "Earth (C-137)",
+            "unknown"
+          ]
+        },
+        {
+          "name": "Lawnmower Dog",
+          "episode": "S01E02",
+          "location": [
+            "Earth (C-137)",
+            "unknown",
+            "Mr. Goldenfold's dream",
+            "Snuffles' Dream",
+            "Earth (Replacement Dimension)"
+          ]
+        },
+        {
+          "name": "Raising Gazorpazorp",
+          "episode": "S01E07",
+          "location": [
+            "Gazorpazorp",
+            "unknown",
+            "Earth (Replacement Dimension)",
+            "Earth (C-137)"
+          ]
+        },
+        {
+          "name": "A Rickle in Time",
+          "episode": "S02E01",
+          "location": [
+            "unknown",
+            "Earth (Replacement Dimension)",
+            "Earth (C-137)"
+          ]
+        },
+        {
+          "name": "Total Rickall",
+          "episode": "S02E04",
+          "location": [
+            "Earth (Replacement Dimension)",
+            "unknown",
+            "Earth (C-137)"
+          ]
+        },
+        {
+          "name": "Rixty Minutes",
+          "episode": "S01E08",
+          "location": [
+            "unknown",
+            "Earth (Replacement Dimension)",
+            "Earth (C-137)",
+            "Gazorpazorp",
+            "Interdimensional Cable",
+            "Earth (C-500A)",
+            "Trunk World",
+            "Hamster in Butt World",
+            "Earth (Phone Dimension)"
+          ]
+        },
+        {
+          "name": "Something Ricked This Way Comes",
+          "episode": "S01E09",
+          "location": [
+            "Earth (Replacement Dimension)",
+            "Pluto",
+            "unknown",
+            "Earth (C-137)"
+          ]
+        },
+        {
+          "name": "Ricksy Business",
+          "episode": "S01E11",
+          "location": [
+            "Earth (Replacement Dimension)",
+            "Girvonesk",
+            "unknown",
+            "Earth (C-137)",
+            "Testicle Monster Dimension",
+            "Fantasy World",
+            "Gear World",
+            "Planet Squanch",
+            "Bepis 9",
+            "Bird World"
+          ]
+        },
+        {
+          "name": "Auto Erotic Assimilation",
+          "episode": "S02E03",
+          "location": [
+            "unknown",
+            "Unity's Planet",
+            "Earth (C-137)",
+            "Earth (Replacement Dimension)"
+          ]
+        },
+        {
+          "name": "Get Schwifty",
+          "episode": "S02E05",
+          "location": [
+            "Planet Squanch",
+            "Earth (Replacement Dimension)",
+            "Árboles Mentirosos",
+            "Bird World",
+            "Earth (C-137)",
+            "Larva Alien's Planet",
+            "Alphabetrium",
+            "unknown",
+            "Girvonesk",
+            "Signus 5 Expanse"
+          ]
+        },
+        {
+          "name": "Look Who's Purging Now",
+          "episode": "S02E09",
+          "location": [
+            "Earth (Replacement Dimension)",
+            "unknown",
+            "Earth (C-137)",
+            "Purge Planet"
+          ]
+        },
+        {
+          "name": "Mortynight Run",
+          "episode": "S02E02",
+          "location": [
+            "unknown",
+            "Earth (Replacement Dimension)",
+            "Gear World",
+            "Roy: A Life Well Lived",
+            "Earth (5-126)",
+            "Gazorpazorp",
+            "Testicle Monster Dimension",
+            "Glaagablaaga",
+            "Mr. Meeseeks Box",
+            "Earth (C-137)"
+          ]
+        },
+        {
+          "name": "The Ricks Must Be Crazy",
+          "episode": "S02E06",
+          "location": [
+            "unknown",
+            "Earth (Giant Telepathic Spiders Dimension)",
+            "Earth (C-137)",
+            "Earth (Replacement Dimension)",
+            "Zeep Xanflorp's Miniverse",
+            "Kyle's Teenyverse",
+            "Rick's Battery Microverse"
+          ]
+        },
+        {
+          "name": "Interdimensional Cable 2: Tempting Fate",
+          "episode": "S02E08",
+          "location": [
+            "unknown",
+            "Plopstar",
+            "Earth (C-137)",
+            "Earth (Replacement Dimension)",
+            "Larva Alien's Planet",
+            "Bepis 9",
+            "Hamster in Butt World",
+            "Árboles Mentirosos",
+            "Glaagablaaga"
+          ]
+        },
+        {
+          "name": "Close Rick-counters of the Rick Kind",
+          "episode": "S01E10",
+          "location": [
+            "unknown",
+            "Earth (C-137)",
+            "Mr. Meeseeks Box",
+            "Mount Olympus",
+            "Earth (Chair Dimension)",
+            "Earth (J19ζ7)",
+            "Earth (Evil Rick's Target Dimension)",
+            "Eric Stoltz Mask Earth",
+            "Cronenberg Earth",
+            "Greasy Grandma World",
+            "Earth (Replacement Dimension)",
+            "Earth (Pizza Dimension)",
+            "Hideout Planet",
+            "Earth (Phone Dimension)"
+          ]
+        },
+        {
+          "name": "Big Trouble in Little Sanchez",
+          "episode": "S02E07",
+          "location": [
+            "Earth (C-137)",
+            "unknown",
+            "Earth (Replacement Dimension)",
+            "Nuptia 4"
+          ]
+        }
+      ]
+    ]
+  }
+]

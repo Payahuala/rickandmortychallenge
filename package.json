@@ -1,0 +1,26 @@
+{
+  "name": "rickandmortychallenge",
+  "version": "1.0.0",
+  "description": "Rick and morty challenge for interview",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "jest"
+  },
+  "author": "Diego Guerrero",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Payahuala/rickandmortychallenge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Payahuala/rickandmortychallenge/issues"
+  },
+  "homepage": "https://github.com/Payahuala/rickandmortychallenge#readme"
+}
