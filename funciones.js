@@ -1,6 +1,6 @@
-const fs = require('fs');
+const fs = require("fs");
 
-let myFilePath = './response/output.json';
+let myFilePath = "./response/output.json";
 const characters = "https://rickandmortyapi.com/api/character"; //Characters data
 const locations = "https://rickandmortyapi.com/api/location"; // locations data
 const episodes = "https://rickandmortyapi.com/api/episode"; // episodes data
@@ -23,6 +23,11 @@ async function getData(URL) {
 
 //function to count letters by 'letter' from a string 'inputString'
 async function countLetter(inputString, letter) {
+  // Check if the input string is empty
+  if (!inputString) {
+    return 0;
+  }
+
   let count = 0;
   const lowerCaseInput = inputString.toLowerCase();
   const lowerCaseLetter = letter.toLowerCase();
@@ -35,6 +40,7 @@ async function countLetter(inputString, letter) {
 
   return count;
 }
+
 
 //function for counting a letter from an array of data
 async function countChar(name, letter) {
@@ -53,9 +59,12 @@ async function countChar(name, letter) {
   return suma;
 }
 
-function pushIfDifferent(array, data) {
-  if (!array.includes(data)) {
-    array.push(data);
+async function pushIfDifferent(array, data) {
+  const uniqueValues = new Set(array);
+
+  if (!uniqueValues.has(data)) {
+    uniqueValues.add(data);
+    await array.push(data);
   }
 }
 
@@ -65,7 +74,7 @@ async function getLocationByCharacter() {
     const episodeData = (await getData(episodes))?.results;
 
     if (!episodeData || !Array.isArray(episodeData)) {
-      throw new Error('No episode data or invalid data.');
+      throw new Error("No episode data or invalid data.");
     }
 
     const results = []; // Use an array to store results for each episode
@@ -81,10 +90,12 @@ async function getLocationByCharacter() {
         console.log(`Working on: ${episode.name} ...`);
 
         // Fetch character data concurrently using Promise.all
-        const characterPromises = episode.characters.map(async (characterURL) => {
-          const character = await getData(characterURL);
-          pushIfDifferent(location, character?.origin?.name);
-        });
+        const characterPromises = episode.characters.map(
+          async (characterURL) => {
+            const character = await getData(characterURL);
+            pushIfDifferent(location, character?.origin?.name);
+          }
+        );
 
         await Promise.all(characterPromises);
 
@@ -94,11 +105,10 @@ async function getLocationByCharacter() {
 
     return results; // Return an array of episodeInfo objects, each containing location data for an episode
   } catch (error) {
-    console.error('Error in getLocationByCharacter:', error);
+    console.error("Error in getLocationByCharacter:", error);
     return []; // Handle the error by returning an empty array or another appropriate value.
   }
 }
-
 
 function exportToJson(data) {
   try {
@@ -134,4 +144,6 @@ module.exports = {
   getLocationByCharacter,
   exportToJson,
   measureExecutionTime,
+  pushIfDifferent,
+  countLetter
 };
