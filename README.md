@@ -1,6 +1,6 @@
 # RickandMortyChallenge
 
-[![License](https://img.shields.io/badge/license-ISC-blue.svg)](LICENSE)
+MIT license.
 
 Rick and Morty challenge for interview.
 
@@ -29,18 +29,21 @@ To get started with this project, you can follow these installation instructions
    ```
 
 2. Navigate to the project directory:
+``` bash
    cd rickandmortychallenge
-
+```
 
 3. Install dependencies:
+```bash
     npm install
-
+```
 ## Usage
 To use this project, follow these steps:
 
 Start the application:
+``` bash
 npm start
-
+```
 
 ## Testing
 This project uses Jest for testing. You can run the tests with the following command:

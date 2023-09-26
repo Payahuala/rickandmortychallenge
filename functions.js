@@ -44,11 +44,13 @@ async function countLetter(inputString, letter) {
 
 //function for counting a letter from an array of data
 async function countChar(name, letter) {
+
   const data = {
     episode: episodes,
     character: characters,
     location: locations,
   };
+  
   const rawData = await getData(data[name]);
   const resp = rawData.results;
   let suma = 0;
@@ -87,7 +89,6 @@ async function getLocationByCharacter() {
           episode: episode.episode,
           location: location, // Store the location data in this episodeInfo object
         };
-        console.log(`Working on: ${episode.name} ...`);
 
         // Fetch character data concurrently using Promise.all
         const characterPromises = episode.characters.map(
@@ -125,18 +126,20 @@ function exportToJson(data) {
 }
 
 //return time execution
-async function measureExecutionTime(func, timerName) {
-  console.time(timerName); // Start the timer
+async function measureExecutionTime(func) {
+  const startTime = performance.now(); // Record the start time
 
-  // Execute the provided function
-  const respFunc = await func();
+  try {
+    const respFunc = await func();
 
-  console.timeEnd(timerName); // End the timer and log the elapsed time
+    const endTime = performance.now(); // Record the end time
+    const elapsedMilliseconds = endTime - startTime; // Calculate elapsed time in milliseconds
 
-  // Calculate and return the elapsed time in milliseconds
-  const respTime = console.timeLog(timerName);
-
-  return [respFunc, respTime];
+    return [respFunc, elapsedMilliseconds];
+  } catch (error) {
+    console.error('Error in measureExecutionTime:', error);
+    throw error;
+  }
 }
 
 module.exports = {

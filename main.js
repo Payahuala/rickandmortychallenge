@@ -1,4 +1,4 @@
-const functions = require("./funciones.js");
+const functions = require("./functions.js");
 
 async function returnCharCount(params) {
   const result = [];
@@ -14,8 +14,6 @@ async function returnCharCount(params) {
         });
       })
     );
-
-    console.log(result);
 
     return result;
   } catch (error) {
@@ -49,9 +47,12 @@ async function solver(exerciseName, func) {
 
     const result = {
       exercise_name: exerciseName,
-      time: time,
+      time: time || "problem with measureTime",
+      in_time: time <= 3,
       results: resp,
     };
+
+    console.log(result);
 
     return result;
   } catch (error) {

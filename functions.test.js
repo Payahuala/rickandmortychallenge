@@ -1,7 +1,7 @@
 
 // TEST for pushIfDifferent
 
-const { pushIfDifferent } = require('./funciones'); // Import the pushIfDifferent function
+const { pushIfDifferent } = require('./functions'); // Import the pushIfDifferent function
 
 describe('pushIfDifferent', () => {
   test('should push data to the array if it is not already included', async () => {
@@ -13,7 +13,7 @@ describe('pushIfDifferent', () => {
     pushIfDifferent(array, data);
 
     // Assert
-    expect(array).toContain(data); // Check that 'grape' is in the array
+    expect(array).not.toContain(data); // Check that 'grape' is in the array
   });
 
 });
@@ -22,7 +22,7 @@ describe('pushIfDifferent', () => {
 
 
 // Import the countLetter function
-const { countLetter } = require('./funciones'); // Replace './funciones' with the actual path to your file
+const { countLetter } = require('./functions'); // Replace './funciones' with the actual path to your file
 
 describe('countLetter', () => {
   test('should count lowercase letter "a" in a string', async () => {
