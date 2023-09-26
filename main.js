@@ -48,7 +48,7 @@ async function solver(exerciseName, func) {
     const result = {
       exercise_name: exerciseName,
       time: time || "problem with measureTime",
-      in_time: time <= 3,
+      in_time: time <= 3000,
       results: resp,
     };
 
